@@ -1,0 +1,58 @@
+confusionMatrix(lr_pred, test$Frailty)
+Confusion Matrix and Statistics
+
+          Reference
+Prediction N Y
+         N 1 0
+         Y 0 1
+                                     
+               Accuracy : 1          
+                 95% CI : (0.1581, 1)
+    No Information Rate : 0.5        
+    P-Value [Acc > NIR] : 0.25       
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.5        
+         Detection Rate : 0.5        
+   Detection Prevalence : 0.5        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : N          
+                                     
+> confusionMatrix(svm_pred, test$Frailty)
+Confusion Matrix and Statistics
+
+          Reference
+Prediction N Y
+         N 1 1
+         Y 0 0
+                                          
+               Accuracy : 0.5             
+                 95% CI : (0.0126, 0.9874)
+    No Information Rate : 0.5             
+    P-Value [Acc > NIR] : 0.75            
+                                          
+                  Kappa : 0               
+                                          
+ Mcnemar's Test P-Value : 1.00            
+                                          
+            Sensitivity : 1.0             
+            Specificity : 0.0             
+         Pos Pred Value : 0.5             
+         Neg Pred Value : NaN             
+             Prevalence : 0.5             
+         Detection Rate : 0.5             
+   Detection Prevalence : 1.0             
+      Balanced Accuracy : 0.5             
+                                          
+       'Positive' Class : N               
+                                          
+> confusionMatrix(dt_pred, test$Frailty
+Connected to your session in progress, last started 2023-Feb-27 23:28:23 UTC (13 minutes ago)
