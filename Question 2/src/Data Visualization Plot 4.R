@@ -1,0 +1,6 @@
+library(readr)
+StudentsPerformance <- read_csv("StudentsPerformance.csv")
+View(StudentsPerformance)
+attach(StudentsPerformance)
+lbl <- c(male=145,female=255)
+barplot(lbl,main="Bar Graph for Gender",col="orange")
